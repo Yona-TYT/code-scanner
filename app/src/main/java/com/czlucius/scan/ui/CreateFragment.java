@@ -288,9 +288,8 @@ public class CreateFragment extends Fragment {
                 (color, hexVal) -> vm.setBackgroundColor(color));
     }
 
-
-    private void displayColorPicker(Integer initialColor, ColorPickerDialog.OnColorPickedListener listener) {
-        ColorPickerDialog colorPickerDialog = ColorPickerDialog.createColorPickerDialog(requireContext());
+    private void displayColorPicker(Integer initialColor, AmbilWarnaDialog.OnAmbilWarnaListener listener) {
+        AmbilWarnaDialog colorPickerDialog = new AmbilWarnaDialog(this, initialColor, new OnAmbilWarnaListener();
         if (initialColor != null) {
             colorPickerDialog.setLastColor(initialColor);
         }
@@ -300,4 +299,5 @@ public class CreateFragment extends Fragment {
         colorPickerDialog.hideOpacityBar();
         colorPickerDialog.show();
     }
+
 }
