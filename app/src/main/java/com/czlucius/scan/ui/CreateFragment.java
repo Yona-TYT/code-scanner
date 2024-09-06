@@ -287,18 +287,10 @@ public class CreateFragment extends Fragment {
         displayColorPicker(vm.getBackgroundColor(),
                 (color, hexVal) -> vm.setBackgroundColor(color));
     }
-
+	
     private void displayColorPicker(Integer initialColor, AmbilWarnaDialog.OnAmbilWarnaListener listener) {
         AmbilWarnaDialog colorPickerDialog = new AmbilWarnaDialog(this, initialColor, new OnAmbilWarnaListener());
-        if (initialColor != null) {
-			public void onOk(AmbilWarnaDialog dialog, int initialColor) {
-            }
-			@Override
-			public void onCancel(AmbilWarnaDialog dialog) {
-				// cancel was selected by the user
-			}
-       }
-      dialog.show();
-    }
 
+        dialog.show();
+    }
 }
