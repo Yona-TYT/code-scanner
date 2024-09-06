@@ -288,8 +288,5 @@ public class CreateFragment extends Fragment {
                 (color, hexVal) -> vm.setBackgroundColor(color));
     }
 	
-    private void displayColorPicker(Integer initialColor, AmbilWarnaDialog.OnAmbilWarnaListener listener) {
-        AmbilWarnaDialog colorPickerDialog = new AmbilWarnaDialog(this, initialColor, new OnAmbilWarnaListener());
 
-    }
 }
