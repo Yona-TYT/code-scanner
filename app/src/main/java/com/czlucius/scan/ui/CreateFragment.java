@@ -291,13 +291,14 @@ public class CreateFragment extends Fragment {
     private void displayColorPicker(Integer initialColor, AmbilWarnaDialog.OnAmbilWarnaListener listener) {
         AmbilWarnaDialog colorPickerDialog = new AmbilWarnaDialog(this, initialColor, new OnAmbilWarnaListener());
         if (initialColor != null) {
-            colorPickerDialog.setLastColor(initialColor);
-        }
-        colorPickerDialog.setPositiveActionText(getString(R.string.ok));
-        colorPickerDialog.setNegativeActionText(getString(R.string.cancel));
-        colorPickerDialog.setOnColorPickedListener(listener);
-        colorPickerDialog.hideOpacityBar();
-        colorPickerDialog.show();
+			public void onOk(AmbilWarnaDialog dialog, int initialColor) {
+            }
+			@Override
+			public void onCancel(AmbilWarnaDialog dialog) {
+				// cancel was selected by the user
+			}
+       }
+      dialog.show();
     }
 
 }
