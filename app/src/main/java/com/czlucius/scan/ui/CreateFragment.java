@@ -291,6 +291,5 @@ public class CreateFragment extends Fragment {
     private void displayColorPicker(Integer initialColor, AmbilWarnaDialog.OnAmbilWarnaListener listener) {
         AmbilWarnaDialog colorPickerDialog = new AmbilWarnaDialog(this, initialColor, new OnAmbilWarnaListener());
 
-        dialog.show();
     }
 }
