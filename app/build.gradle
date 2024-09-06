@@ -124,7 +124,7 @@ dependencies {
     implementation 'com.google.zxing:core:3.3.2'
 
     // Color Picker:
-    implementation 'com.azeesoft.lib.colorpicker:colorpicker:1.0.8'
+    implementation 'com.github.yukuku:ambilwarna:2.0.1'
     
     // VCard creator:
     implementation 'com.googlecode.ez-vcard:ez-vcard:0.11.2'
