@@ -44,7 +44,7 @@ import androidx.core.content.FileProvider;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.azeesoft.lib.colorpicker.ColorPickerDialog;
+import yuku.ambilwarna.AmbilWarnaDialog;
 import com.czlucius.scan.R;
 import com.czlucius.scan.databinding.ContentsDialogBinding;
 import com.czlucius.scan.databinding.CreateBinding;
