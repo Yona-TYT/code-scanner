@@ -289,7 +289,7 @@ public class CreateFragment extends Fragment {
     }
 
     private void displayColorPicker(Integer initialColor, AmbilWarnaDialog.OnAmbilWarnaListener listener) {
-        AmbilWarnaDialog colorPickerDialog = new AmbilWarnaDialog(this, initialColor, new OnAmbilWarnaListener();
+        AmbilWarnaDialog colorPickerDialog = new AmbilWarnaDialog(this, initialColor, new OnAmbilWarnaListener());
         if (initialColor != null) {
             colorPickerDialog.setLastColor(initialColor);
         }
