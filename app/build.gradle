@@ -138,7 +138,7 @@ dependencies {
     // App Onboarding:
     implementation 'com.heinrichreimersoftware:material-intro:2.0.0'
     // ACRA crash reporting:
-    implementation "ch.acra:acra-mail:5.9.0-rc2"
+    //implementation "ch.acra:acra-mail:5.9.0-rc2"
 
     
 
