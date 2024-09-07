@@ -65,8 +65,5 @@
     public void handleSilentException(java.lang.Throwable);
 }
 
--dontwarn com.google.devtools.build.android.desugar.runtime.ThrowableExtension
--dontwarn com.google.j2objc.annotations.ReflectionSupport$Level
--dontwarn com.google.j2objc.annotations.ReflectionSupport
--dontwarn com.google.j2objc.annotations.RetainedWith
+-keep class packagename.classname
 
