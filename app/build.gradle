@@ -116,21 +116,21 @@ dependencies {
 
 
     // ML Kit on GMS:
-    implementation 'com.google.mlkit:barcode-scanning:17.0.2'
+    //implementation 'com.google.mlkit:barcode-scanning:17.0.2'
 
     // Room:
-    implementation "androidx.room:room-runtime:2.4.3"
-    annotationProcessor "androidx.room:room-compiler:2.4.3"
+    //implementation "androidx.room:room-runtime:2.4.3"
+    //annotationProcessor "androidx.room:room-compiler:2.4.3"
 
 
     // Moshi serialization library:
-    implementation("com.squareup.moshi:moshi:1.11.0")
+    //implementation("com.squareup.moshi:moshi:1.11.0")
 
     // ZXing:
-    implementation 'com.google.zxing:core:3.3.2'
+    //implementation 'com.google.zxing:core:3.3.2'
 
     // Color Picker:
-    implementation 'com.github.yukuku:ambilwarna:2.0.1'
+    //implementation 'com.github.yukuku:ambilwarna:2.0.1'
     
     // VCard creator:
     //implementation 'com.googlecode.ez-vcard:ez-vcard:0.11.2'
