@@ -75,6 +75,11 @@ android {
 
 
 
+
+plugins {
+  id "org.jetbrains.kotlin.plugin.noarg" version "1.9.22"
+}
+
 dependencies {
 
     
