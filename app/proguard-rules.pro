@@ -64,6 +64,3 @@
 -keep public class org.acra.ErrorReporter {
     public void handleSilentException(java.lang.Throwable);
 }
-
--keep class packagename.classname
-
