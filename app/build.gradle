@@ -140,7 +140,9 @@ dependencies {
     // ACRA crash reporting:
     implementation "ch.acra:acra-mail:5.9.0-rc2"
 
+    
 
+   implementation 'com.google.errorprone:error_prone_annotations:2.23.0'
 
 
 
