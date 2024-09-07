@@ -73,7 +73,11 @@ android {
     namespace 'com.czlucius.scan'
 }
 
-configurations.all {
+
+
+dependencies {
+
+    configurations.all {
     resolutionStrategy {
         eachDependency {
             if ((requested.group == "org.jetbrains.kotlin") && (requested.name.startsWith("kotlin-stdlib"))) {
@@ -82,8 +86,6 @@ configurations.all {
     }
 }
 
-
-dependencies {
        
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.6.1'
