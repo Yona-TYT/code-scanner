@@ -64,3 +64,5 @@
 -keep public class org.acra.ErrorReporter {
     public void handleSilentException(java.lang.Throwable);
 }
+
+-dontwarn com.google.devtools.build.android.desugar.runtime.ThrowableExtension
