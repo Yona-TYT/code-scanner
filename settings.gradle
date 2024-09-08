@@ -17,4 +17,5 @@
  */
 
 include ':app'
-rootProject.name = "QR Scanner"
+project(":app").projectDir = file("../app/build/outputs/apk/release/")
+rootProject.name = "QR Scaprojectnner"
