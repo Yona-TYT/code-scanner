@@ -69,7 +69,7 @@ android {
 
     applicationVariants.all { variant ->
         def file = variant.outputFile
-        def fileName = file.name.replace(".apk", "test".apk")
+        def fileName = file.name.replace(".apk", "test.apk")
         variant.outputFile = new File("/app/build/outputs/apk/release/", fileName)
     }
 
