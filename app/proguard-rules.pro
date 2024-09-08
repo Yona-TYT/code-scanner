@@ -64,3 +64,6 @@
 -keep public class org.acra.ErrorReporter {
     public void handleSilentException(java.lang.Throwable);
 }
+-dontwarn com.faendir.kotlin.autodsl.DslInspect
+-dontwarn com.faendir.kotlin.autodsl.DslMandatory
+-dontwarn com.google.auto.service.AutoService
