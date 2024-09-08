@@ -48,8 +48,8 @@ jobs:
 
       # Run Build Project
       - name: Build gradle project
-        run: ./gradlew  && echo "OK" || cat "/home/runner/work/code-scanner/code-scanner/app/build/outputs/mapping/fossRelease/missing_rules.txt"
-        #run: ./gradlew build  --scan
+        #run: ./gradlew  && echo "OK" || cat "/home/runner/work/code-scanner/code-scanner/app/build/outputs/mapping/fossRelease/missing_rules.txt"
+        run: ./gradlew build  --scan
 
       # Create APK Debug
       - name: Build apk debug project (APK) - ${{ env.main_project_module }} module
