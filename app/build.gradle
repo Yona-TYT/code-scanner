@@ -75,7 +75,7 @@ applicationVariants.all { variant ->
         def releaseFileName = "${rootProject.name}_${defaultConfig.versionName}.apk"
         output.outputFileName = releaseFileName.toLowerCase()
 
-         println "A message which is logged at QUIET level"
+         println "--------- Dir :: $releaseFileName"
     }
 }
     // Add Product Flavors for Google Play, F-Droid, and general release versions.
