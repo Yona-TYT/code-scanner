@@ -66,4 +66,40 @@
 }
 -dontwarn com.faendir.kotlin.autodsl.DslInspect
 -dontwarn com.faendir.kotlin.autodsl.DslMandatory
--dontwarn com.google.auto.service.AutoService
+-dontwarn com.google.auto.service.AutoService -dontwarn com.sun.org.apache.xml.internal.utils.PrefixResolver
+-dontwarn java.beans.BeanInfo
+-dontwarn java.beans.IndexedPropertyDescriptor
+-dontwarn java.beans.IntrospectionException
+-dontwarn java.beans.Introspector
+-dontwarn java.beans.MethodDescriptor
+-dontwarn java.beans.PropertyDescriptor
+-dontwarn java.rmi.Remote
+-dontwarn java.rmi.RemoteException
+-dontwarn java.rmi.server.RemoteObject
+-dontwarn java.rmi.server.UnicastRemoteObject
+-dontwarn javax.swing.tree.TreeNode
+-dontwarn org.apache.xml.utils.PrefixResolver
+-dontwarn org.jaxen.BaseXPath
+-dontwarn org.jaxen.FunctionContext
+-dontwarn org.jaxen.JaxenException
+-dontwarn org.jaxen.NamespaceContext
+-dontwarn org.jaxen.Navigator
+-dontwarn org.jaxen.VariableContext
+-dontwarn org.jaxen.XPathFunctionContext
+-dontwarn org.jaxen.dom.DocumentNavigator
+-dontwarn org.python.core.Py
+-dontwarn org.python.core.PyDictionary
+-dontwarn org.python.core.PyException
+-dontwarn org.python.core.PyFloat
+-dontwarn org.python.core.PyInteger
+-dontwarn org.python.core.PyLong
+-dontwarn org.python.core.PyNone
+-dontwarn org.python.core.PyObject
+-dontwarn org.python.core.PySequence
+-dontwarn org.python.core.PyString
+-dontwarn org.python.core.PyStringMap
+-dontwarn org.python.core.PySystemState
+-dontwarn org.zeroturnaround.javarebel.ClassEventListener
+-dontwarn org.zeroturnaround.javarebel.Reloader
+-dontwarn org.zeroturnaround.javarebel.ReloaderFactory
+
