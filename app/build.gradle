@@ -19,8 +19,14 @@
 apply plugin: 'com.android.application'
 
 android {
-
-
+   signingConfigs{
+      release{
+        storeFile file("../keystore.jks")
+        storePassword System.getenv("RELEASE_KEYSTORE_PASSWORD")
+        keyAlias System.getenv("RELEASE_KEYSTORE_ALIAS")
+        keyPassword System.getenv("RELEASE_KEY_PASSWORD")
+      }
+   }
     compileSdkVersion 33
 
     defaultConfig {
@@ -34,12 +40,19 @@ android {
     }
 
     buildTypes {
-        release {
+
+      release {
+          minifyEnabled false
+          signingConfig signingConfigs.release
+          proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+     /*   release {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
         }
+    */
         debug {
         	applicationIdSuffix ".debug"
             versionNameSuffix "-debug"
