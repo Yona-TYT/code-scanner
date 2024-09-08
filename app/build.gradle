@@ -82,8 +82,10 @@ dependencies {
     //implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    //implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    //implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    //Este falla pero esta descartado
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+
     //implementation 'androidx.navigation:navigation-ui:2.5.3'
     
     //Este falla pero esta descartado
