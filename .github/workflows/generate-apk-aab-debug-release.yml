@@ -64,8 +64,7 @@ jobs:
 
       # Show dir 
       - name: Test Yona
-       run: ls "/home/runner/work/code-scanner/code-scanner"
-
+        run: ls "/home/runner/work/code-scanner/code-scanner/"
 
       # Create Bundle AAB Release
       # Noted for main module build [main_project_module]:bundleRelease
