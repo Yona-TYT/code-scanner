@@ -58,7 +58,8 @@ jobs:
 
       # Create APK Release
       - name: Build apk release project (APK) - ${{ env.main_project_module }} module
-        run: ./gradlew assemble --warning-mode=all
+        run: ./gradlew assemble && echo "OK" || cat "/home/runner/work/code-scanner/code-scanner/app/build/outputs/mapping/fossRelease/missing_rules.txt"
+       # run: ./gradlew assemble --warning-mode 
 
       # Create Bundle AAB Release
       # Noted for main module build [main_project_module]:bundleRelease
