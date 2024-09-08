@@ -29,15 +29,15 @@ android {
         targetSdkVersion 33
         versionCode 17
         versionName "1.9"
-
-        //testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //Este falla pero esta descartado
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
             minifyEnabled true
             shrinkResources true
-           proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+           //proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
         }
         debug {
