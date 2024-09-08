@@ -103,7 +103,7 @@ dependencies {
     //androidTestImplementation 'androidx.test.ext:junit:1.1.3'
 
     //Esta falla
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    //androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     //testImplementation 'androidx.test:runner:1.4.0'
 
 
