@@ -67,7 +67,7 @@ android {
 
     }
 
-applicationVariants.all { variant ->
+/*applicationVariants.all { variant ->
     variant.outputs.each { output ->
         variant.packageApplicationProvider.get().outputDirectory = new File(
             project.rootDir.absolutePath + "/release")
@@ -77,7 +77,7 @@ applicationVariants.all { variant ->
 
          println "Dir:: $project.rootDir.absolutePath --------- Name :: $releaseFileName"
     }
-}
+}*/
     // Add Product Flavors for Google Play, F-Droid, and general release versions.
     flavorDimensions "standard"
     productFlavors {
