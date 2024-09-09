@@ -50,7 +50,7 @@ jobs:
         run: |
           echo $ENCODED_STRING > keystore-b64.txt
           base64 -d keystore-b64.txt > keystore.jks
-          
+          echo $RELEASE_KEYSTORE_PASSWORD
 
       # Show dir 
       - name: Test Yona
