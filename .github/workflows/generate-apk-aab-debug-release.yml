@@ -54,7 +54,7 @@ jobs:
 
       # Show dir 
       - name: Test Yona
-        run: ls "/"
+        run: ls "/home/runner/work/code-scanner/code-scanner/"
         
       - name: Change wrapper permissions
         run: chmod +x ./gradlew
