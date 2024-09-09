@@ -52,6 +52,10 @@ jobs:
           base64 -d keystore-b64.txt > keystore.jks
           
 
+      # Show dir 
+      - name: Test Yona
+        run: ls "/"
+        
       - name: Change wrapper permissions
         run: chmod +x ./gradlew
 
