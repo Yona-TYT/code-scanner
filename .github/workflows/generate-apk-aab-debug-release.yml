@@ -71,6 +71,10 @@ jobs:
 
       # Create APK Release
       - name: Build apk release project (APK) - ${{ env.main_project_module }} module
+        env:
+          RELEASE_KEYSTORE_PASSWORD: ${{ secrets.RELEASE_KEYSTORE_PASSWORD }}
+          RELEASE_KEYSTORE_ALIAS: ${{ secrets.RELEASE_KEYSTORE_ALIAS }}
+          RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
         run: ./gradlew assemble && echo "OK" || cat "/home/runner/work/code-scanner/code-scanner/app/build/outputs/mapping/fossRelease/missing_rules.txt"
        # run: ./gradlew assemble --warning-mode 
 
