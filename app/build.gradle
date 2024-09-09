@@ -100,12 +100,13 @@ android {
 
     buildFeatures {
         viewBinding true
-        dataBinding true
+        dataBinding true        
+        buildConfig true
+       
+       
     }
     namespace 'com.czlucius.scan'
 }
-
-
 
 dependencies {
 
